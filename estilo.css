@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+  background: #f2f2f2;
+  text-align: center;
+  padding: 50px 20px; /* Menos espacio horizontal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: inline-block;
+  max-width: 90%; /* Para asegurarse de que la tarjeta no se salga de la pantalla */
+  width: 400px;  /* Máximo de 400px de ancho */
+  box-sizing: border-box;
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #bf42f4;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease; /* Transición más suave */
+}
+
+a.button:hover {
+  background-color: #a23ace;
+}
+
+a.secondary {
+  background-color: #6834a8;
+}
+
+a.secondary:hover {
+  background-color: #8344d1;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+  .card {
+    width: 80%;  /* La tarjeta ocupará el 80% del ancho en pantallas pequeñas */
+    padding: 20px;
+  }
+
+  a.button, a.secondary {
+    width: 100%;  /* Los botones ocupan el 100% del ancho en pantallas pequeñas */
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 20px; /* Reducir tamaño del título en móviles */
+  }
+
+  p {
+    font-size: 14px; /* Reducir el tamaño del texto en móviles */
+  }
+}
+
+/* Para pantallas extra pequeñas (teléfonos más pequeños) */
+@media (max-width: 480px) {
+  .card {
+    width: 90%;  /* La tarjeta ocupará el 90% del ancho en pantallas muy pequeñas */
+  }
+
+  a.button, a.secondary {
+    padding: 12px 15px;
+  }
+
+  h1 {
+    font-size: 18px; /* Ajustar más el tamaño del título */
+  }
+
+  p {
+    font-size: 12px; /* Ajustar el tamaño del texto */
+  }
+}
+
